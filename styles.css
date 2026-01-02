@@ -270,30 +270,6 @@
             font-size: 0.9rem;
         }
 
-        .whatsapp-float {
-           position: fixed;
-           width: 60px;
-               height: 60px;
-           bottom: 25px;
-           right: 25px;
-           background: linear-gradient(135deg, #25D366, #128C7E);
-           color: white;
-           border-radius: 50px;
-           text-align: center;
-           font-size: 1.6rem;
-           box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           z-index: 1000;
-           transition: all 0.3s ease;
-           text-decoration: none; }
-
-       .whatsapp-float:hover {
-           transform: scale(1.1) rotate(10deg);
-           box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
-       }
-
        .testimonials {
            padding: 60px 0;
            background-color: #f8f9fa; }
@@ -551,3 +527,28 @@
                 height: 220px;
             }
         }
+
+       /* Fix WhatsApp button & Brands hover */
+.whatsapp-float {
+    position: fixed !important;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+    z-index: 10000;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Brands grayscale hover fix */
+.brands-container img {
+    transition: filter 0.3s, opacity 0.3s, transform 0.3s;
+}
