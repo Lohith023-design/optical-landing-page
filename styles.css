@@ -270,6 +270,72 @@
             font-size: 0.9rem;
         }
 
+        .whatsapp-float {
+           position: fixed;
+           width: 60px;
+               height: 60px;
+           bottom: 25px;
+           right: 25px;
+           background: linear-gradient(135deg, #25D366, #128C7E);
+           color: white;
+           border-radius: 50px;
+           text-align: center;
+           font-size: 1.6rem;
+           box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           z-index: 1000;
+           transition: all 0.3s ease;
+           text-decoration: none; }
+
+       .whatsapp-float:hover {
+           transform: scale(1.1) rotate(10deg);
+           box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+       }
+
+       .testimonials {
+           padding: 60px 0;
+           background-color: #f8f9fa; }
+
+       .testimonial-grid {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 25px;
+           justify-content: center; }
+
+       .testimonial-card {
+           flex: 1 1 300px;
+           max-width: 360px;
+           background: white;
+           padding: 30px 25px;
+           border-radius: 16px;
+           box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+           text-align: center;
+           position: relative;
+           border-left: 4px solid #ee1b24; }
+
+       .testimonial-card::before {
+           content: '"';
+           font-size: 4rem;
+           color: #ee1b24;
+           position: absolute;
+           top: 15px;
+           left: 20px;
+           font-family: serif;
+           opacity: 0.3; }
+
+       .testimonial-card p {
+           font-style: italic;
+           color: #555;
+           margin-bottom: 15px;
+           font-size: 1rem; }
+
+       .testimonial-card strong {
+           color: #2c3e50;
+           font-size: 0.95rem;
+}
+
         /* Brands section */
        .brands-section {
              margin: 40px 0;
