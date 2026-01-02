@@ -270,6 +270,55 @@
             font-size: 0.9rem;
         }
 
+        /* Brands section */
+       .brands-section {
+             margin: 40px 0;
+             padding: 20px 0;
+             overflow: hidden;
+       }
+
+       .brands-container {
+             display: flex;
+             gap: 40px;
+             animation: scroll 20s linear infinite;
+       }
+
+       .brands-container img {
+             height: 40px;
+             width: auto;
+             opacity: 0.7;
+             filter: grayscale(100%);
+             transition: all 0.3s ease;
+       }
+
+       .brands-container img:hover {
+             opacity: 1;
+             filter: grayscale(0%);
+             transform: scale(1.1);
+       }
+
+       /* Duplicate images for seamless loop */
+       @keyframes scroll {
+       0% { transform: translateX(0); }
+       100% { transform: translateX(-50%); }
+       }
+
+       /* Pause animation on hover */
+       .brands-section:hover .brands-container {
+            animation-play-state: paused;
+       }
+
+       /* Mobile: stack brands */
+       @media (max-width: 768px) {
+       .brands-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            animation: none;
+    }
+}
+
+
         /* Clinic Section */
         .clinic-section {
             background-color: #2c3e50;
