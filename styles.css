@@ -552,3 +552,35 @@
 .brands-container img {
     transition: filter 0.3s, opacity 0.3s, transform 0.3s;
 }
+
+.promo-banner {
+    background: linear-gradient(135deg, #ee1b24, #701f1c);
+    color: white;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(238,27,36,0.2);
+}
+.promo-banner p { font-size: 0.9rem; text-align: center; margin: 0; }
+.promo-banner a { color: #ffd700; font-weight: 600; }
+
+.scroll-top {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #ee1b24;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 999;
+}
+.scroll-top.show {
+    opacity: 1;
+}
